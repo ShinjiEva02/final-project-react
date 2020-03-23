@@ -1,1 +1,17 @@
-@import "../node_modules/normalize.css/normalize.css";
+@import "~materialize-css/dist/css/materialize.min.css";
+
+.erorr-message {
+    color: red;
+}
+
+.card.horizontal .card-image {
+    max-width: 20%;
+}
+
+.card.horizontal .card-image img {
+    margin: 23px 2px;
+}
+
+.icon-button {
+    cursor: pointer;
+}
