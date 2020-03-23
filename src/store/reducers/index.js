@@ -1,10 +1,12 @@
-import { combineReducers } from 'redux';
-import {usersReducer} from "./users/users";
-import {userDetailsReducer} from "./user-details/user-details";
-import { spinnerReducer } from "./spinner/spinner";
+import { combineReducers } from "redux";
+import { usersReducer } from "./users";
+import { loadingReducer } from "./loading";
+import { filterUsersReducer } from "./filter-users";
+import { errorReducer } from "./error";
 
 export const rootReducer = combineReducers({
     users: usersReducer,
-    userDetails: userDetailsReducer,
-    spinner: spinnerReducer
+    loading: loadingReducer,
+    error: errorReducer,
+    filter: filterUsersReducer
 });
